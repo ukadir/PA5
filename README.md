@@ -29,6 +29,8 @@ Imagine we have a hash table with the following backing array, where X denotes t
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 |  X  |     |  X  |     |  X  |     |     |     |  X  |     |
 
+What is the probability that we will have ***at least* 1 collision in the next 2 insertions**? Create a file called ``1c.txt`` (case-sensitive) in the root directory of this repository (i.e., in the same folder as [``README.md``](README.md)) containing your answer (a single decimal number) rounded to 3 decimal places.
+
 ### Task 1d: Create ``1d.txt`` (5 points)
 Imagine we have a hash table with the following backing array, where X denotes that a given cell contains an element (regardless of what that element actually is):
 
@@ -36,7 +38,7 @@ Imagine we have a hash table with the following backing array, where X denotes t
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 |  X  |     |  X  |     |  X  |     |     |     |  X  |     |
 
-Assuming we use **linear probing** to resolve collisions, what is the probability that we will have **exactly 1 collision in the next 2 insertions**? Create a file called ``1d.txt`` (case-sensitive) in the root directory of this repository (i.e., in the same folder as [``README.md``](README.md)) containing your answer (a single decimal number) rounded to 3 decimal places.
+Assuming we use **linear probing** to resolve collisions, what is the probability that we will have ***exactly* 1 collision in the next 2 insertions**? Create a file called ``1d.txt`` (case-sensitive) in the root directory of this repository (i.e., in the same folder as [``README.md``](README.md)) containing your answer (a single decimal number) rounded to 3 decimal places.
 
 ### Task 1e: Create ``1e.txt`` (5 points)
 Imagine we have a hash table with the following backing array, where X denotes that a given cell contains an element (regardless of what that element actually is):
@@ -45,7 +47,7 @@ Imagine we have a hash table with the following backing array, where X denotes t
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 |  X  |     |  X  |     |  X  |     |     |     |  X  |     |
 
-Assuming we use **separate chaining** to resolve collisions, what is the probability that we will have **exactly 1 collision in the next 2 insertions**? Create a file called ``1e.txt`` (case-sensitive) in the root directory of this repository (i.e., in the same folder as [``README.md``](README.md)) containing your answer (a single decimal number) rounded to 3 decimal places.
+Assuming we use **separate chaining** to resolve collisions, what is the probability that we will have ***exactly* 1 collision in the next 2 insertions**? Create a file called ``1e.txt`` (case-sensitive) in the root directory of this repository (i.e., in the same folder as [``README.md``](README.md)) containing your answer (a single decimal number) rounded to 3 decimal places.
 
 ## Part 2: Bloom Filters (40 points)
 In an ideal world, we would like to use a Hash Table to store a set of elements because of its O(1) average-case time complexity for find, insert, and remove operations. In practice, however, we may face datasets that are too large to fit into memory at once. In these cases, we can use the [Bloom filter](https://en.wikipedia.org/wiki/Bloom_filter), which is a probabilistic data structure that never has false negatives (i.e., if it tells us *x* doesn't exist, *x* definitely doesn't exist), but that may have false positives (i.e., if it tells us that *x* exists, *x* might not actually exist).
