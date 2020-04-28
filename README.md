@@ -55,6 +55,12 @@ In an ideal world, we would like to use a Hash Table to store a set of elements 
 ### Task: Edit [``BloomFilter.cpp``](BloomFilter.cpp)
 In this repository, there is a file called [``BloomFilter.cpp``](BloomFilter.cpp) that contains initial steps towards implementing a Bloom filter. Function headers (with usage details) are included in [``BloomFilter.h``](BloomFilter.h), and you need to fill in the ``insert()`` and ``find()`` functions of the ``BloomFilter`` class. We will not be checking for memory leaks, as you should not be dynamically allocating any memory.
 
+You will want to make use of the hash functions we have declared in [``HashFunctions.h``](HashFunctions.h) and defined in [``HashFunctions.cpp``](HashFunctions.cpp). **You must not edit these files!** Instead, in your code, you will have access to the ``hash_functions`` global variable, which is a [``vector``](http://www.cplusplus.com/reference/vector/vector/) containing multiple [``string``](http://www.cplusplus.com/reference/string/string) hash functions. Here is an example of how to call one of them:
+
+```c++
+unsigned int niema_hash = hash_functions[0]("Niema");
+```
+
 We have provided a tester program, [``BloomFilterTest``](BloomFilterTest.cpp), that will help test your code. You can compile it as follows:
 
 ```bash
@@ -77,6 +83,12 @@ In an ideal world, we would like to use a Hash Map to store the counts of elemen
 
 ### Task: Edit [``CountMinSketch.cpp``](CountMinSketch.cpp)
 In this repository, there is a file called [``CountMinSketch.cpp``](CountMinSketch.cpp) that contains initial steps towards implementing a Count-Min Sketch. Function headers (with usage details) are included in [``CountMinSketch.h``](CountMinSketch.h), and you need to fill in the ``increment()`` and ``find()`` functions of the ``CountMinSketch`` class. We will not be checking for memory leaks, as you should not be dynamically allocating any memory.
+
+You will want to make use of the hash functions we have declared in [``HashFunctions.h``](HashFunctions.h) and defined in [``HashFunctions.cpp``](HashFunctions.cpp). **You must not edit these files!** Instead, in your code, you will have access to the ``hash_functions`` global variable, which is a [``vector``](http://www.cplusplus.com/reference/vector/vector/) containing multiple [``string``](http://www.cplusplus.com/reference/string/string) hash functions. Here is an example of how to call one of them:
+
+```c++
+unsigned int niema_hash = hash_functions[0]("Niema");
+```
 
 We have provided a tester program, [``CountMinSketchTest``](CountMinSketchTest.cpp), that will help test your code. You can compile it as follows:
 
