@@ -1,4 +1,5 @@
 #include <functional>
+#include <string>
 #include <vector>
 #include "HashFunctions.h"
 using namespace std;
