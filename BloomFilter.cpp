@@ -24,6 +24,5 @@ bool BloomFilter::find(const string & s) {
         if(this->bits[index] == false)
             return false;
     }
-
     return true;
 }
